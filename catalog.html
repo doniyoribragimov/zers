@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка сайта</title>
+</head>
+
+<body>
+
+    <div class="content-holder">
+        <!-- === HEADER === -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <a class="header__logolink" href="/">
+                            <img class="header__logo" src="images/logo.svg" alt="logo">
+                        </a>
+
+                        <ul class="header__list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="header__langs">
+                            <a class="header__lang active" href="#">RU</a>
+                            <a class="header__lang" href="#">EN</a>
+                        </div>
+
+                        <a class="header__search" href="#">
+                            <img src="images/search.svg" alt="search icon">
+                        </a>
+
+                        <div class="header__phone">
+                            <div class="header__current">
+                                <a href="tel:+74956322194">+7 (495) 632-21-94</a>
+                                <img src="images/arrow-white.svg" alt="arrow icon">
+                            </div>
+                            <ul class="header__dropdown">
+                                <li><a href="tel:+74956322136">+7 (495) 632-21-36</a></li>
+                                <li><a href="tel:+74956322111">+7 (495) 632-21-11</a></li>
+                            </ul>
+                        </div>
+                        <a class="header__trigger getModal" href="#mobileMenu">
+                            <img src="images/header-btn.svg" alt="header btn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ==== MAIN CONTENT ==== -->
+        <main class="main">
+            <!-- === BREADCRUMBS === -->
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                        <div class="breadcrumbs__current">Каталог </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === CATALOG === -->
+            <section class="catalog spacing">
+                <div class="container">
+                    <div class="head">
+                        <h2 class="title">Каталог </h2>
+                        <a class="link" href="images/certificate-1.png" download>Скачать каталог в PDF</a>
+                    </div>
+
+                    <div class="catalog__inner">
+                        <div class="catalog__item">
+                            <div class="catalog__main">
+                                <h3>Подвески <br> хвостовиков</h3>
+                                <p>Подвески хвостовиков предназначены для спуска и подвешивания хвостовиков в предыдущей обсадной колонне с цементированием или без цементирования и герметизации межколонного пространства.</p>
+                            </div>
+
+                            <a class="link" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="catalog__item">
+                            <div class="catalog__main">
+                                <h3>Пакеры</h3>
+                                <p>Проходные заколонные пакеры предназначены для надежной изоляции газонефтеводоносных пластов и предотвращения межпластовых перетоков.</p>
+                            </div>
+
+                            <a class="link" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="catalog__item">
+                            <div class="catalog__main">
+                                <h3>Оснастка</h3>
+                                <p>Оснастка обсадных колонн включает в себя оборудование, которое необходимо для того чтобы провести спуск обсадной колонны в скважину и провести ее цементирование или без цементирования.</p>
+                            </div>
+
+                            <a class="link" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="catalog__item">
+                            <div class="catalog__main">
+                                <h3>Оборудование <br> для бурения</h3>
+                                <p>Проходные заколонные пакеры предназначены для надежной изоляции газонефтеводоносных пластов и предотвращения межпластовых перетоков.</p>
+                            </div>
+
+                            <a class="link" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="catalog__item">
+                            <div class="catalog__main">
+                                <h3>Гидравлический <br> разрыв пласта</h3>
+                                <p>Комплексы технических средств для проведения многостадийного гидроразрыва пласта различаются по способу крепления скважины хвостовиком</p>
+                            </div>
+
+                            <a class="link" href="#">Подробнее</a>
+                        </div>
+
+                        <div class="catalog__item">
+                            <div class="catalog__main">
+                                <h3>Примеры <br> компоновок <br>
+                                    для решения <br> различных задач
+                                </h3>
+                            </div>
+
+                            <a class="link" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- === FOOTER === -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logolink" href="/">
+                        <img class="footer__logo" src="images/logo.svg" alt="logo">
+                    </a>
+
+                    <ul class="footer__list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <a class="footer__up" href="#">
+                        Наверх
+                        <img src="images/arrow-up.svg" alt="arrow icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- === MODAL === -->
+    <div id="modal" class="modal">
+        <div class="modal__inner">
+            <h3 class="modal__title">Оставить заявку</h3>
+            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
+                проведет бесплатную консультацию</p>
+            <button class="modal__close">
+                <img src="images/x-icon.svg" alt="x icon">
+            </button>
+            <form class="form">
+                <div class="form__item">
+                    <img src="images/profile-icon.svg" alt="form icon">
+                    <input type="text" name="fullname" placeholder="Ваше имя">
+                </div>
+                <div class="form__item">
+                    <img src="images/tel-icon.svg" alt="form icon">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+                </div>
+                <button class="btn btn--main" type="submit">Оставить заявку</button>
+                <label class="form__confirm">
+                    <input type="checkbox" checked>
+                    <span class="form__policy">
+                        Нажимая на кнопку оставить, вы соглашаетесь
+                        с <a href="#">политикой конфиденциальности</a> сайта
+                    </span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- === MOBILE MENU === -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__head">
+                <a class="mobile-menu__logolink" href="/">
+                    <img class="mobile-menu__logo" src="images/logo.svg" alt="logo">
+                </a>
+                <button class="mobile-menu__close">
+                    <img src="images/x-white.svg" alt="x icon">
+                </button>
+            </div>
+
+            <div class="mobile-menu__main">
+                <ul class="mobile-menu__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- === SCRIPTS === -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

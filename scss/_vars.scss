@@ -1,0 +1,384 @@
+// VARS
+$text: #2a2a2a;
+$main: #891F7F;
+$grey: #6E7C87;
+
+// EXTENDS
+%hover {
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+@mixin border($border) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"],
+  select,
+  .btn,
+  textarea {
+    border-radius: $border;
+  }
+}
+
+@mixin height($height) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"],
+  select,
+  .btn {
+    height: $height;
+  }
+}
+
+@mixin padding($paddingY, $paddingX) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="search"],
+  select,
+  input[type="url"] {
+    padding: $paddingY $paddingX;
+  }
+}
+
+@mixin clamp($line) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(11%) saturate(7465%) hue-rotate(210deg) brightness(124%) contrast(117%);
+}
+
+%color {
+  transition: color 0.1s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $main;
+    }
+  }
+}
+
+%line {
+  position: relative;
+  padding-bottom: 2px;
+  color: #fff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transition: all 0.1s linear;
+  }
+
+  @media (any-hover: hover) {
+    &:hover::before {
+      width: 0;
+    }
+  }
+}
+
+%lineReverse {
+  position: relative;
+  padding-bottom: 2px;
+  color: #fff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    border-bottom: 1px solid #fff;
+    bottom: 0;
+    right: 0;
+    transition: all 0.1s linear;
+    width: 0;
+  }
+
+  @media (any-hover: hover) {
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}
+
+%selectHide {
+  &::selection {
+    background-color: transparent;
+  }
+
+  *::selection {
+    background-color: transparent;
+  }
+}
+
+
+// select{
+//     padding-right: 20px;
+//     padding-left: 16px;
+//     width: 100%;
+//     -moz-appearance: none;
+//     appearance: none;
+//     -webkit-appearance: none;
+//     background-image: url('../images/select-down.svg');
+//     background-repeat: no-repeat;
+//     background-position: right 0px center;
+//     background-size: 10px;
+//     outline: none;
+//     &:focus {
+//       background-image: url('../images/select-up.svg');
+//     }
+// }
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  border-radius: 4px;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  flex-shrink: 0;
+
+  &::after {
+    content: '';
+    height: 100%;
+    border-radius: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid $main;
+    transition: all 0.1s ease-in;
+  }
+
+
+  &:checked {
+    &::after {
+      background-color: $main;
+      background-image: url('../images/check-icon.svg');
+    }
+  }
+}
+
+
+
+
+input[type="radio"] {
+  position: relative;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  flex-shrink: 0;
+  border: 1px solid $main;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &:checked {
+    &::after {
+      background-color: $main;
+    }
+  }
+}
+
+
+
+// @media (any-hover: hover){
+//   &:hover{
+//   }
+// }
+
+.table {
+  &__wrapper {
+    overflow-x: auto;
+    position: relative;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+
+  &__one {
+    border-bottom: 1px solid #202020;
+    padding: 8px;
+  }
+
+  &__three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    strong {
+      border-right: 1px solid #202020;
+      padding: 10px;
+      font-weight: 500;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+}
+
+table {
+  width: 100%;
+  overflow: hidden;
+  color: #202020;
+  border-radius: 20px;
+  color: #fff;
+  border: 1px solid #383838;
+}
+
+thead tr {
+  background-color: #1a1a1a;
+  text-align: center;
+  font-weight: 500;
+}
+
+td {
+  border: 1px solid #383838;
+  border-collapse: collapse;
+}
+
+.tables {
+  border-radius: 20px;
+  border: 1px solid #383838;
+  overflow: hidden;
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    .tables__item:first-child strong{
+      text-align: left;
+    }
+
+    &:first-child {
+      background: #1a1a1a;
+      text-align: center;
+      .tables__item strong{
+        text-align: center;
+      }
+    }
+  }
+
+  strong {
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  &__three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    height: 100%;
+    strong{
+      border-right: 1px solid #383838;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 100%;
+    padding-bottom: 16px;
+    strong {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    border: 1px solid #383838;
+    border-collapse: collapse;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+
+    &>strong {
+      padding: 16px;
+      text-align: center;
+    }
+
+    &:has(.tables__three) {
+      &>strong {
+        text-align: center;
+        border-bottom: 1px solid #383838;
+      }
+
+      strong {
+        padding: 16px;
+      }
+    }
+  }
+}

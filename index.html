@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка сайта</title>
+</head>
+
+<body>
+
+    <div class="content-holder">
+        <!-- === HEADER === -->
+        <header class="header floating">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <a class="header__logolink" href="/">
+                            <img class="header__logo" src="images/logo.svg" alt="logo">
+                        </a>
+
+                        <ul class="header__list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="header__langs">
+                            <a class="header__lang active" href="#">RU</a>
+                            <a class="header__lang" href="#">EN</a>
+                        </div>
+
+                        <a class="header__search" href="#">
+                            <img src="images/search.svg" alt="search icon">
+                        </a>
+
+                        <div class="header__phone">
+                            <div class="header__current">
+                                <a href="tel:+74956322194">+7 (495) 632-21-94</a>
+                                <img src="images/arrow-white.svg" alt="arrow icon">
+                            </div>
+                            <ul class="header__dropdown">
+                                <li><a href="tel:+74956322136">+7 (495) 632-21-36</a></li>
+                                <li><a href="tel:+74956322111">+7 (495) 632-21-11</a></li>
+                            </ul>
+                        </div>
+                        <a class="header__trigger getModal" href="#mobileMenu">
+                            <img src="images/header-btn.svg" alt="header btn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ==== MAIN CONTENT ==== -->
+        <main class="main">
+            <!-- === WELCOME === -->
+            <section class="welcome">
+                <div class="container">
+                    <div class="welcome__inner" style="background-image: url(images/welcome-bg.png);">
+                        <div class="welcome__main">
+                            <div class="welcome__left">
+                                <div class="welcome__box">
+                                    с 1998 года обеспечиваем закачивание нефтяных и газовых скважин
+                                </div>
+                                <img src="images/name.svg" alt="name">
+                            </div>
+                            <h1 class="welcome__title">
+                                инновации
+                                <span>и надежность</span>
+                                проверенные временем
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === GEOS === -->
+            <section class="geos spacing">
+                <div class="container">
+                    <div class="geos__inner">
+                        <div class="geos__content">
+                            <h2 class="title mb">География бизнеса</h2>
+                            <p>ООО «НТЦ «ЗЭРС» имеет
+                                собственную производственную площадку в г. Рязань, оснащенную современным станочным
+                                парком с
+                                ЧПУ, свою опытно экспериментальную базу, а также представительства во всех основных
+                                нефтедобывающих регионах Российской Федерации, <span>в таких городах, как:</span></p>
+                            <ul class="tick">
+                                <li>Бузулук</li>
+                                <li>Ноябрьск</li>
+                                <li>Нижневартовск</li>
+                                <li>Иркутск</li>
+                                <li>Нефтеюганск</li>
+                            </ul>
+                        </div>
+                        <div class="geos__right">
+                            <div class="geos__flags">
+                                <div class="geos__flag">
+                                    <img src="images/flag-1.svg" alt="flag icon">
+                                </div>
+
+                                <div class="geos__flag">
+                                    <img src="images/flag-2.svg" alt="flag icon">
+                                </div>
+
+                                <div class="geos__flag">
+                                    <img src="images/flag-3.svg" alt="flag icon">
+                                </div>
+
+                                <div class="geos__flag">
+                                    <img src="images/flag-4.svg" alt="flag icon">
+                                </div>
+
+                                <div class="geos__flag">
+                                    <img src="images/flag-5.svg" alt="flag icon">
+                                </div>
+                            </div>
+                            <img class="geos__map" src="images/geos-map.png" alt="geos map">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === FACTORY === -->
+            <section class="factory spacing">
+                <div class="container">
+                    <div class="factory__inner">
+                        <div class="factory__left">
+                            <h2 class="title">Завод в г.Рязань</h2>
+                            <p class="text">Сертифицирован по ИСО 9001-2015</p>
+                            <div class="factory__certificates">
+                                <a class="factory__wrap" href="images/certificate-1.png" data-fancybox="factory">
+                                    <img src="images/certificate-1.png" alt="certificate img">
+                                </a>
+
+                                <a class="factory__wrap" href="images/certificate-2.png" data-fancybox="factory">
+                                    <img src="images/certificate-2.png" alt="certificate img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="factory__right">
+                            <div class="factory__lines">
+                                <div class="factory__line">
+                                    <strong>
+                                        <span data-counter-start="0" data-counter-end="10768">0</span>
+                                        <sub>м²</sub>
+                                    </strong>
+                                    <p>общая производственная площадь</p>
+                                </div>
+
+                                <div class="factory__line">
+                                    <strong>
+                                        <span data-counter-start="0" data-counter-end="375">0</span>
+                                        <sub>чел.</sub>
+                                    </strong>
+                                    <p>количество сотрудников</p>
+                                </div>
+
+                                <div class="factory__line">
+                                    <strong><span data-counter-start="0" data-counter-end="80">0</span>
+                                        <sub>%</sub>
+                                    </strong>
+                                    <p>специалисты высшего разряда</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === COMPANY === -->
+            <section class="company spacing">
+                <div class="container">
+                    <div class="company__inner">
+                        <div class="company__left">
+                            <h2 class="title">О компании</h2>
+                            <div class="company__hidden">
+                                <div class="company__box">
+                                    <div class="company__num">
+                                        1500+
+                                    </div>
+                                    <p>спусков оборудования в скважины ежегодно</p>
+                                </div>
+                            </div>
+                            <p class="text">Научно-технический центр «ЗЭРС» был основан
+                                в 1998 году представителями ОАО «Сибнефть-Ноябрьскнефтегаз» и конструкторами из ВНИИБТ.
+                                Наша компания занимается разработкой технологии для эффективного заканчивания скважин.
+                            </p>
+                        </div>
+
+                        <div class="company__box">
+                            <div class="company__num">
+                                1500+
+                            </div>
+                            <p>спусков оборудования в скважины ежегодно</p>
+                        </div>
+                    </div>
+                    <p class="company__text">Основные направления деятельности НТЦ «ЗЭРС» включают создание
+                        инновационных технических средств для завершения и укрепления скважин, контроль производства
+                        оборудования и поставку с инженерным сопровождением в процессе эксплуатации.</p>
+                    <div class="company__items">
+                        <div class="company__item">
+                            <img src="images/company-1.jpg" alt="company img">
+                            <div class="company__info">
+                                <p>Надежность и простота конструкций технических средств для заканчивания и крепления
+                                    скважин.</p>
+                            </div>
+                        </div>
+
+                        <div class="company__item">
+                            <img src="images/company-2.jpg" alt="company img">
+                            <div class="company__info">
+                                <p>Качественное изготовление и заводские испытания каждого изделия с проверкой его
+                                    функциональных технологических свойств.</p>
+                            </div>
+                        </div>
+
+                        <div class="company__item">
+                            <img src="images/company-3.jpg" alt="company img">
+                            <div class="company__info">
+                                <p>Квалифицированное инженерно-технологическое сопровождение при промысловом применении
+                                    технических средств.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === PARTNERS === -->
+            <section class="partners spacing">
+                <div class="container">
+                    <div class="head">
+                        <h2 class="title">Наши парнеры</h2>
+                        <div class="arrows">
+                            <button class="arrow arrow--left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 13L1 7L7 1" stroke="#000" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="arrow arrow--right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13L7 7L1 1" stroke="#000" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="partners__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="partners__item">
+                                    <img src="images/partners-1.svg" alt="partners img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partners__item">
+                                    <img src="images/partners-2.svg" alt="partners img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partners__item">
+                                    <img src="images/partners-3.svg" alt="partners img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partners__item">
+                                    <img src="images/partners-4.svg" alt="partners img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partners__item">
+                                    <img src="images/partners-5.svg" alt="partners img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partners__item">
+                                    <img src="images/partners-3.svg" alt="partners img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- === FOOTER === -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logolink" href="/">
+                        <img class="footer__logo" src="images/logo.svg" alt="logo">
+                    </a>
+
+                    <ul class="footer__list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <a class="footer__up" href="#">
+                        Наверх
+                        <img src="images/arrow-up.svg" alt="arrow icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- === MODAL === -->
+    <div id="modal" class="modal">
+        <div class="modal__inner">
+            <h3 class="modal__title">Оставить заявку</h3>
+            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
+                проведет бесплатную консультацию</p>
+            <button class="modal__close">
+                <img src="images/x-icon.svg" alt="x icon">
+            </button>
+            <form class="form">
+                <div class="form__item">
+                    <img src="images/profile-icon.svg" alt="form icon">
+                    <input type="text" name="fullname" placeholder="Ваше имя">
+                </div>
+                <div class="form__item">
+                    <img src="images/tel-icon.svg" alt="form icon">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+                </div>
+                <button class="btn btn--main" type="submit">Оставить заявку</button>
+                <label class="form__confirm">
+                    <input type="checkbox" checked>
+                    <span class="form__policy">
+                        Нажимая на кнопку оставить, вы соглашаетесь
+                        с <a href="#">политикой конфиденциальности</a> сайта
+                    </span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- === MOBILE MENU === -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__head">
+                <a class="mobile-menu__logolink" href="/">
+                    <img class="mobile-menu__logo" src="images/logo.svg" alt="logo">
+                </a>
+                <button class="mobile-menu__close">
+                    <img src="images/x-white.svg" alt="x icon">
+                </button>
+            </div>
+
+            <div class="mobile-menu__main">
+                <ul class="mobile-menu__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- === SCRIPTS === -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

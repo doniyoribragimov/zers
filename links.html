@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Этапы разработки сайта</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #2c3e50;
+      padding: 20px 0;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    h3 {
+      margin: 5px 10px;
+      color: white;
+
+    }
+
+    .nav-button {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 5px 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .nav-button:hover {
+      background: #34495e;
+      transform: translateX(5px);
+    }
+
+    .nav-button.active {
+      background: #3498db;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+
+    .stage {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 5px;
+      border-left: 4px solid #3498db;
+    }
+
+    .stage h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .feature {
+      background: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex: 1 1 200px;
+    }
+
+    .feature.yes {
+      border-left: 3px solid #2ecc71;
+    }
+
+    .feature.no {
+      border-left: 3px solid #e74c3c;
+    }
+
+    .explanation {
+      background: #e8f4fc;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+
+    .faq-item {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .question {
+      font-weight: bold;
+      color: #2c3e50;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .answer {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+      border-left: 4px solid #3498db;
+    }
+
+    .highlight {
+      background: #e8f4fc;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 15px 0;
+      font-style: italic;
+    }
+
+    .stage-badge {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Стуктура верстки:</h3>
+      <a href="index.html" class="nav-button">Главная</a>
+      <a href="company.html" class="nav-button">О компании</a>
+      <a href="catalog.html" class="nav-button">Каталог</a>
+      <a href="item.html" class="nav-button">Типовая страница продукта</a>
+      <a href="contacts.html" class="nav-button">Контакты</a>
+    </div>
+
+    <div class="content">
+      <h1>Почему на вёрстке ещё не всё работает?</h1>
+
+      <div class="explanation">
+        <p>Сайт создаётся поэтапно. Сейчас вы видите <strong>вёрстку</strong> - это "каркас" сайта. Все функции появятся на следующем этапе, когда мы установим WordPress.</p>
+        <h3>Почему так?</h3>
+        <p>1. <strong>Вёрстка</strong> - это HTML/CSS, которые отвечают только за внешний вид</p>
+        <p>2. <strong>WordPress</strong> добавляет контент сайту - функционал, реальные списки услуг, товаров</p>
+        <p>3. Такой порядок работы позволяет не делать лишню работу, которую на следующем этапе удалят из-за не надобности</p>
+      </div>
+
+      <h1>Ответы на частые вопросы по вёрстке</h1>
+
+      <div class="faq-item">
+        <div class="question">1. Почему большинство ссылок и кнопок не работают?</div>
+        <div class="answer">
+          <p>На этапе вёрстки сайт — это шаблон, который показывает структуру и расположение элементов.</p>
+          <ul>
+            <li>Ссылки не ведут на страницы → потому что эти страницы ещё не созданы. Они будут добавлены на 3 этапе (WordPress).</li>
+            <li>Кнопки не реагируют → для их работы нужен Плагины </li>
+            <li>Шрифты могут отображаться немного иначе в браузере</li>
+          </ul>
+          <div class="highlight">
+            На <span class="stage-badge">3 этапе</span> при наполнении сайта все эти моменты будут окончательно выровнены под ваш реальный контент.
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="question">2. Почему в макете блок отличается от вёрстки?</div>
+        <div class="answer">
+          <p>При вёрстке мы ориентируемся на <strong>структуру</strong>, а не на конкретный контент. Небольшие отличия возможны по нескольким причинам:</p>
+          <ul>
+            <li>Реальный контент может отличаться от демонстрационного в макете</li>
+            <li>Блоки по структуре такой же, просто отличаться контентная часть</li>
+          </ul>
+          <div class="highlight">
+            На <span class="stage-badge">3 этапе</span> при наполнении сайта все эти моменты будут окончательно выровнены под ваш реальный контент.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">3. Почему у меня в каталоге и команде одна фотография дублируется?</div>
+        <div class="answer">
+          <p>Это сделано специально:</p>
+          <ol>
+            <li>Мы используем одинаковые изображения как <strong>заглушки</strong> для демонстрации структуры</li>
+            <li>Это помогает сосредоточиться на проверке расположения элементов, а не контента</li>
+          </ol>
+          <div class="highlight">
+            На <span class="stage-badge">3 этапе</span> мы удалим тестовый контент и подключим логику вывода реальных данных из админ-панели WordPress. Вы сможете загружать уникальные фото для каждого элемента.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="question">4. Почему качество картинок плохое?</div>
+        <div class="answer">
+          <p>Это временная ситуация, вызванная:</p>
+          <ul>
+            <li>Использованием демонстрационных изображений из макета (часто в уменьшенном размере)</li>
+            <li>Оптимизацией для быстрой загрузки на этапе разработки</li>
+            <li>Отсутствием ресайза под конкретные блоки</li>
+          </ul>
+          <div class="highlight">
+            На <span class="stage-badge">3 этапе</span> мы загрузим чёткие фотографии в правильных размерах непосредственно в админ-панель WordPress, что гарантирует отличное качество на готовом сайте.
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <h2>Этап 2: Вёрстка (что есть сейчас)</h2>
+        <div class="features-list">
+          <div class="feature yes">
+            ✔ Внешний вид сайта
+          </div>
+          <div class="feature yes">
+            ✔ Расположение элементов
+          </div>
+          <div class="feature yes">
+            ✔ Адаптивность
+          </div>
+          <div class="feature no">
+            ✖ Рабочие формы
+          </div>
+          <div class="feature no">
+            ✖ Админ-панель
+          </div>
+          <div class="feature no">
+            ✖ База данных
+          </div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <h2>Этап 3: WordPress (что будет добавлено)</h2>
+        <div class="features-list">
+          <div class="feature yes">
+            ✔ Рабочие формы обратной связи
+          </div>
+          <div class="feature yes">
+            ✔ Система управления контентом
+          </div>
+          <div class="feature yes">
+            ✔ Возможность редактировать текст
+          </div>
+          <div class="feature yes">
+            ✔ Функционал по типу выбор города
+          </div>
+          <div class="feature yes">
+            ✔ Загрузка изображений и видео
+          </div>
+          <div class="feature yes">
+            ✔ Безопасность и резервные копии
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

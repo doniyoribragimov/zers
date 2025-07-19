@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка сайта</title>
+</head>
+
+<body>
+
+    <div class="content-holder">
+        <!-- === HEADER === -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <a class="header__logolink" href="/">
+                            <img class="header__logo" src="images/logo.svg" alt="logo">
+                        </a>
+
+                        <ul class="header__list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="header__langs">
+                            <a class="header__lang active" href="#">RU</a>
+                            <a class="header__lang" href="#">EN</a>
+                        </div>
+
+                        <a class="header__search" href="#">
+                            <img src="images/search.svg" alt="search icon">
+                        </a>
+
+                        <div class="header__phone">
+                            <div class="header__current">
+                                <a href="tel:+74956322194">+7 (495) 632-21-94</a>
+                                <img src="images/arrow-white.svg" alt="arrow icon">
+                            </div>
+                            <ul class="header__dropdown">
+                                <li><a href="tel:+74956322136">+7 (495) 632-21-36</a></li>
+                                <li><a href="tel:+74956322111">+7 (495) 632-21-11</a></li>
+                            </ul>
+                        </div>
+                        <a class="header__trigger getModal" href="#mobileMenu">
+                            <img src="images/header-btn.svg" alt="header btn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ==== MAIN CONTENT ==== -->
+        <main class="main">
+            <!-- === BREADCRUMBS === -->
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                        <div class="breadcrumbs__current">О компании</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === HISTORY === -->
+            <section class="history spacing">
+                <div class="container">
+                    <div class="history__inner">
+                        <div class="history__left">
+                            <h2 class="title">История </h2>
+                            <p class="text">
+                                Значительное увеличение объемов бурения в 60-70 е годах, связанное с освоением
+                                месторождений Западной Сибири, сложные геолого-технологические условия новых
+                                месторождений определили необходимость разработки и производства отечественного
+                                оборудования – пакеров и специнструмента для разобщения пластов при строительстве и
+                                эксплуатации нефтяных и газовых скважин.
+                                <br><br>
+                                Основную роль в развитии отечественной практики применения данного оборудования сыграли
+                                исследования и разработки Всесоюзного Научно-исследовательского Института Буровой
+                                Техники ВНИИБТ, в частности лабораторией под руководством доктора технических наук,
+                                профессором А.А. Гайворонским и ведущими специалистами лаборатории Л.Х. Фарукшиным, Ю.З.
+                                Цыриным, В.И. Ванифатьевым. На сегодняшний день «ЗЭРС» превратилась в технологического
+                                лидера в области заканчивания скважин
+                            </p>
+                        </div>
+                        <div class="history__box">
+                            <h3>Основание ЗЭРС</h3>
+                            <p>В 1998 конструкторами из ВНИИБТ был основан Научно-Технический Центр «ЗЭРС»
+                                (Заканчивание, Эксплуатация и Ремонт Скважин), основной задачей которого являлась
+                                разработка, постановка на производство и внедрение в эксплуатацию комплексов технических
+                                средств и устройств для заканчивания скважин.</p>
+                            <div class="history__items">
+                                <div class="history__item">
+                                    <img src="images/history-1.png" alt="history img">
+                                    <div class="history__info">
+                                        <strong>Ванифатьев Владимир Иванович</strong>
+                                        <p>Родоначальник, основатель ЗЭРС
+                                            Кандидат технических наук,
+                                            Заслуженный изобретатель России</p>
+                                    </div>
+                                </div>
+
+                                <div class="history__item">
+                                    <img src="images/history-2.png" alt="history img">
+                                    <div class="history__info">
+                                        <strong>Ванифатьева Анна Владимировна</strong>
+                                        <p>Сегодня у руля компании стоит дочь одного из ее прародителей - Ванифатьева
+                                            Анна Владимировна, с гордостью несущая в будущее наследие отца. С лёгкостью
+                                            соединяя мудрость традиций и смелость инноваций, она ведёт бизнес к новым
+                                            вершинам, расширяя границы и приумножая успех</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === STRATS === -->
+            <section class="strats spacing">
+                <div class="container">
+                    <div class="strats__head">
+                        <div class="strats__head__left">
+                            <h2 class="title">Стратегия развития</h2>
+                            <p class="text">Основной стратегической целью компании «ЗЭРС» является ответственное и
+                                квалифицированное содействие нашим заказчикам в достижении максимального коэффициента
+                                извлечения углеводородов.
+                                При этом во всех своих проектах мы максимально используем свои технологии в интересах
+                                рационального использования природных ресурсов и сохранения окружающей среды.
+                                Наряду с основной стратегической целью компания «ЗЭРС» в своем развитии руководствуется
+                                следующими принципами:</p>
+                        </div>
+                        <div class="arrows">
+                            <button class="arrow arrow--left">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 13L1 7L7 1" stroke="#000" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="arrow arrow--right">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13L7 7L1 1" stroke="#000" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="strats__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-1.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Обеспечение стабильного
+                                            и долгосрочного роста бизнеса</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-2.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Совершенствования производственной инфраструктуры</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-3.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Активное внедрение
+                                            и использование новых технологий</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-4.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Укрепление базы заказчиков и ее неуклонное расширение</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-5.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Контроль качества и мониторинг </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-6.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Внедрение высоких стандартов управления</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-7.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Освоение новых рынков</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="company__item">
+                                    <img src="images/strats-8.jpg" alt="company img">
+                                    <div class="company__info">
+                                        <p>Непрерывное повышение эффективности по всем направлениям деятельности</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === VACANCY === -->
+            <section class="vacancy spacing">
+                <div class="container">
+                    <div class="vacancy__hidden">
+                        <h2 class="title">Вакансии</h2>
+                    </div>
+                    <div class="vacancy__inner">
+                        <div class="vacancy__left">
+                            <h2 class="title">Вакансии</h2>
+                            <p class="text">Мы рады приветствовать вас на странице карьеры нашей компании! Если вы ищете
+                                возможность развиваться в динамичной и инновационной среде, мы приглашаем вас стать
+                                частью нашей команды.
+                                Наша компания стремится к созданию уникальных решений и предоставлению
+                                высококачественных услуг нашим клиентам.
+                                Мы верим, что успех достигается благодаря талантливым и увлечённым людям.
+                                Мы ищем специалистов, готовых принимать вызовы, работать в команде и приносить свежие
+                                идеи.
+                                Если вы хотите внести свой вклад в наше общее дело и развиваться вместе с нами, мы будем
+                                рады рассмотреть ваше резюме!</p>
+                            <strong>Пожалуйста, ознакомьтесь с нашими вакансиями на сайте hh. Мы с нетерпением ждем
+                                возможности познакомиться с вами!</strong>
+                            <a class="btn btn--main" href="#">Смотреть на hh.ru</a>
+                        </div>
+                        <div class="vacancy__right">
+                            <h3>Присоединяйтесь к нашей команде!</h3>
+                            <img class="vacancy__img" src="images/vacancy.jpg" alt="vacancy img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- === FOOTER === -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logolink" href="/">
+                        <img class="footer__logo" src="images/logo.svg" alt="logo">
+                    </a>
+
+                    <ul class="footer__list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <a class="footer__up" href="#">
+                        Наверх
+                        <img src="images/arrow-up.svg" alt="arrow icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- === MODAL === -->
+    <div id="modal" class="modal">
+        <div class="modal__inner">
+            <h3 class="modal__title">Оставить заявку</h3>
+            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
+                проведет бесплатную консультацию</p>
+            <button class="modal__close">
+                <img src="images/x-icon.svg" alt="x icon">
+            </button>
+            <form class="form">
+                <div class="form__item">
+                    <img src="images/profile-icon.svg" alt="form icon">
+                    <input type="text" name="fullname" placeholder="Ваше имя">
+                </div>
+                <div class="form__item">
+                    <img src="images/tel-icon.svg" alt="form icon">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+                </div>
+                <button class="btn btn--main" type="submit">Оставить заявку</button>
+                <label class="form__confirm">
+                    <input type="checkbox" checked>
+                    <span class="form__policy">
+                        Нажимая на кнопку оставить, вы соглашаетесь
+                        с <a href="#">политикой конфиденциальности</a> сайта
+                    </span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- === MOBILE MENU === -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__head">
+                <a class="mobile-menu__logolink" href="/">
+                    <img class="mobile-menu__logo" src="images/logo.svg" alt="logo">
+                </a>
+                <button class="mobile-menu__close">
+                    <img src="images/x-white.svg" alt="x icon">
+                </button>
+            </div>
+
+            <div class="mobile-menu__main">
+                <ul class="mobile-menu__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- === SCRIPTS === -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

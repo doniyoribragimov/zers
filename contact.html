@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка сайта</title>
+</head>
+
+<body>
+
+    <div class="content-holder">
+        <!-- === HEADER === -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__left">
+                        <a class="header__logolink" href="/">
+                            <img class="header__logo" src="images/logo.svg" alt="logo">
+                        </a>
+
+                        <ul class="header__list">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="header__langs">
+                            <a class="header__lang active" href="#">RU</a>
+                            <a class="header__lang" href="#">EN</a>
+                        </div>
+
+                        <a class="header__search" href="#">
+                            <img src="images/search.svg" alt="search icon">
+                        </a>
+
+                        <div class="header__phone">
+                            <div class="header__current">
+                                <a href="tel:+74956322194">+7 (495) 632-21-94</a>
+                                <img src="images/arrow-white.svg" alt="arrow icon">
+                            </div>
+                            <ul class="header__dropdown">
+                                <li><a href="tel:+74956322136">+7 (495) 632-21-36</a></li>
+                                <li><a href="tel:+74956322111">+7 (495) 632-21-11</a></li>
+                            </ul>
+                        </div>
+                        <a class="header__trigger getModal" href="#mobileMenu">
+                            <img src="images/header-btn.svg" alt="header btn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ==== MAIN CONTENT ==== -->
+        <main class="main">
+            <!-- === BREADCRUMBS === -->
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                        <div class="breadcrumbs__current">Контакты </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- === CONTACT === -->
+            <section class="contact spacing">
+                <div class="container">
+                    <h2 class="title">Контакты </h2>
+                    <div class="contact__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="contact__inner">
+                                    <div class="contact__info">
+                                        <div class="contact__main">
+                                            <h3>Москва</h3>
+                                            <div class="contact__lines">
+                                                <div class="contact__line">
+                                                    <span>Юридический</span>
+                                                    <strong>109147, Б. Факельный пер., д. 22, пом. V</strong>
+                                                </div>
+            
+                                                <div class="contact__line">
+                                                    <span>Телефоны:</span>
+                                                    <strong><a href="tel:+74956322194">+7(495) 632-21-94</a></strong>
+                                                    <strong><a href="tel:+74956322195">+7(495) 632-21-95</a></strong>
+                                                    <strong><a href="tel:+74956322196">+7(495) 632-21-96</a></strong>
+                                                    <strong><a href="tel:+74956322197">+7(495) 632-21-97</a></strong>
+                                                    <strong><a href="tel:+74956322198">+7(495) 632-21-98</a></strong>
+                                                    <strong><a href="tel:+74956322199">+7(495) 632-21-99</a></strong>
+                                                </div>
+            
+                                                <div class="contact__line">
+                                                    <span>Электронный адрес:</span>
+                                                    <strong><a href="mailto:info@zers.ru">info@zers.ru</a></strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contact__bottom">
+                                            <div class="contact__nums">
+                                                <a href="#">1</a>
+                                                <span>...</span>
+                                                <a href="#">7</a>
+                                            </div>
+                                            <div class="arrows">
+                                                <button class="arrow arrow--left">
+                                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 13L1 7L7 1" stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow arrow--right">
+                                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 13L7 7L1 1" stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-map contact__map"
+                                        data-coors="54.714978,55.955825;54.720000,55.960000;54.710000,55.950000"
+                                        data-hint="Большой Факельный переулок, 22;"></div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="contact__inner">
+                                    <div class="contact__info">
+                                        <div class="contact__main">
+                                            <h3>Ноябрьск</h3>
+                                            <div class="contact__lines">
+                                                <div class="contact__line">
+                                                    <span>Юридический</span>
+                                                    <strong>109147, Б. Факельный пер., д. 22, пом. V</strong>
+                                                </div>
+            
+                                                <div class="contact__line">
+                                                    <span>Телефоны:</span>
+                                                    <strong><a href="tel:+74956322194">+7(495) 632-21-94</a></strong>
+                                                    <strong><a href="tel:+74956322195">+7(495) 632-21-95</a></strong>
+                                                    <strong><a href="tel:+74956322196">+7(495) 632-21-96</a></strong>
+                                                    <strong><a href="tel:+74956322197">+7(495) 632-21-97</a></strong>
+                                                    <strong><a href="tel:+74956322198">+7(495) 632-21-98</a></strong>
+                                                    <strong><a href="tel:+74956322199">+7(495) 632-21-99</a></strong>
+                                                </div>
+            
+                                                <div class="contact__line">
+                                                    <span>Электронный адрес:</span>
+                                                    <strong><a href="mailto:info@zers.ru">info@zers.ru</a></strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contact__bottom">
+                                            <div class="contact__nums">
+                                                <a href="#">1</a>
+                                                <span>...</span>
+                                                <a href="#">7</a>
+                                            </div>
+                                            <div class="arrows">
+                                                <button class="arrow arrow--left">
+                                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 13L1 7L7 1" stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow arrow--right">
+                                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 13L7 7L1 1" stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-map contact__map"
+                                        data-coors="54.714978,55.955825;54.720000,55.960000;54.710000,55.950000"
+                                        data-hint="Большой Факельный переулок, 22;"></div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="contact__inner">
+                                    <div class="contact__info">
+                                        <div class="contact__main">
+                                            <h3>Иркутск</h3>
+                                            <div class="contact__lines">
+                                                <div class="contact__line">
+                                                    <span>Юридический</span>
+                                                    <strong>109147, Б. Факельный пер., д. 22, пом. V</strong>
+                                                </div>
+            
+                                                <div class="contact__line">
+                                                    <span>Телефоны:</span>
+                                                    <strong><a href="tel:+74956322194">+7(495) 632-21-94</a></strong>
+                                                    <strong><a href="tel:+74956322195">+7(495) 632-21-95</a></strong>
+                                                    <strong><a href="tel:+74956322196">+7(495) 632-21-96</a></strong>
+                                                    <strong><a href="tel:+74956322197">+7(495) 632-21-97</a></strong>
+                                                    <strong><a href="tel:+74956322198">+7(495) 632-21-98</a></strong>
+                                                    <strong><a href="tel:+74956322199">+7(495) 632-21-99</a></strong>
+                                                </div>
+            
+                                                <div class="contact__line">
+                                                    <span>Электронный адрес:</span>
+                                                    <strong><a href="mailto:info@zers.ru">info@zers.ru</a></strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contact__bottom">
+                                            <div class="contact__nums">
+                                                <a href="#">1</a>
+                                                <span>...</span>
+                                                <a href="#">7</a>
+                                            </div>
+                                            <div class="arrows">
+                                                <button class="arrow arrow--left">
+                                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 13L1 7L7 1" stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow arrow--right">
+                                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 13L7 7L1 1" stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-map contact__map"
+                                        data-coors="54.714978,55.955825;54.720000,55.960000;54.710000,55.950000"
+                                        data-hint="Большой Факельный переулок, 22;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === NAMING === -->
+            <section class="naming spacing">
+                <div class="container">
+                    <h2 class="title"></h2>
+                </div>
+            </section>
+
+            <!-- === NAMING === -->
+            <section class="naming spacing">
+                <div class="container">
+                    <h2 class="title"></h2>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- === FOOTER === -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logolink" href="/">
+                        <img class="footer__logo" src="images/logo.svg" alt="logo">
+                    </a>
+
+                    <ul class="footer__list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                    <a class="footer__up" href="#">
+                        Наверх
+                        <img src="images/arrow-up.svg" alt="arrow icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- === MODAL === -->
+    <div id="modal" class="modal">
+        <div class="modal__inner">
+            <h3 class="modal__title">Оставить заявку</h3>
+            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
+                проведет бесплатную консультацию</p>
+            <button class="modal__close">
+                <img src="images/x-icon.svg" alt="x icon">
+            </button>
+            <form class="form">
+                <div class="form__item">
+                    <img src="images/profile-icon.svg" alt="form icon">
+                    <input type="text" name="fullname" placeholder="Ваше имя">
+                </div>
+                <div class="form__item">
+                    <img src="images/tel-icon.svg" alt="form icon">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+                </div>
+                <button class="btn btn--main" type="submit">Оставить заявку</button>
+                <label class="form__confirm">
+                    <input type="checkbox" checked>
+                    <span class="form__policy">
+                        Нажимая на кнопку оставить, вы соглашаетесь
+                        с <a href="#">политикой конфиденциальности</a> сайта
+                    </span>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- === MOBILE MENU === -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__head">
+                <a class="mobile-menu__logolink" href="/">
+                    <img class="mobile-menu__logo" src="images/logo.svg" alt="logo">
+                </a>
+                <button class="mobile-menu__close">
+                    <img src="images/x-white.svg" alt="x icon">
+                </button>
+            </div>
+
+            <div class="mobile-menu__main">
+                <ul class="mobile-menu__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- === SCRIPTS === -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
