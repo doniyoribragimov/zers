@@ -9500,7 +9500,7 @@ select,
   gap: 20px;
 }
 .catalog__item:nth-child(odd) {
-  background-image: url("../images/cats.png");
+  background-image: url("../images/cats.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
